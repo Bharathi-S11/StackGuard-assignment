@@ -1,11 +1,7 @@
 {
-  "buildCommand": "npm install && npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": "build",
-  "env": {
-    "NODE_VERSION": "22",
-    "NPM_VERSION": "10"
-  },
-  "framework": "create-react-app"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
 
