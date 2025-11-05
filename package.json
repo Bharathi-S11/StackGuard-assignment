@@ -1,5 +1,5 @@
 {
-  "name": "debugging-cash-withdrawal",
+  "name": "stackguard-frontend",
   "private": true,
   "version": "1.0.0",
   "engines": {
@@ -12,10 +12,10 @@
     "@testing-library/user-event": "12.6.2",
     "chalk": "4.1.0",
     "js-cookie": "3.0.5",
-    "react": "18",
-    "react-dom": "18",
-    "react-router-dom": "6",
-    "uuid": "13.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "eslint-config-airbnb": "18.2.1",
@@ -25,12 +25,13 @@
     "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
-    "react-scripts": "4.0.3"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
     "format": "prettier --write \"./src\"",
@@ -40,7 +41,7 @@
     "*.js": [
       "npm run lint:fix"
     ],
-    "*.{js, jsx, json, html, css}": [
+    "*.{js,jsx,json,html,css}": [
       "npm run format"
     ]
   },
@@ -68,3 +69,4 @@
     ]
   }
 }
+
