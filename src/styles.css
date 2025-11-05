@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+/* === AUTH PAGE STYLES === */
+.auth-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left section — illustration or background */
+.auth-left {
+  flex: 1;
+  background: #eef3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f46e5;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.placeholder-box {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+.image-style {
+  width: 80%;
+}
+
+/* Right section — main form */
+.auth-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* Auth container box */
+.auth-box {
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+.auth-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.logo {
+  width: 50px;
+  height: 45px;
+}
+
+/* Brand section */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+.brand h2 {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* Title + subtitle */
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.name-row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #4f46e5;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Primary submit button */
+.primary-btn {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.primary-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Terms paragraph */
+.terms {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+/* Link-like button */
+.link-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.link-btn:hover {
+  color: #4338ca;
+}
+
+/* Toggle paragraph (sign in / create account) */
+.toggle {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+/* Error message */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .auth-layout {
+    flex-direction: column;
+  }
+  .auth-left {
+    display: none;
+  }
+  .auth-right {
+    flex: none;
+    height: 100%;
+    padding: 20px;
+  }
+}
+.logoOut-btn {
+  color: white;
+  font-family: 'Roboto';
+  height: 36px;
+  width: 136px;
+  border: 0px solid;
+  background-color: #4c1d95;
+  border-radius: 6px;
+}
+.link-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 0;
+}
+/* === DASHBOARD PAGE STYLES === */
+
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f46e5;
+  padding: 15px 40px;
+  color: #fff;
+}
+
+.dash-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.logout-btn {
+  background: #fff;
+  color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #e0e7ff;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dashboard-main h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.dashboard-main p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
